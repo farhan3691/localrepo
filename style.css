@@ -1,0 +1,58 @@
+.contact {
+    padding: 80px 0;
+    max-width: 600px;
+    margin: 0 auto; /* Form ko center karne ke liye */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    background: #f8fafc;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    font-family: inherit;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #000;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.submit-btn {
+    padding: 15px 30px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Dark Mode */
+[data-theme="dark"] .contact-form input,
+[data-theme="dark"] .contact-form textarea {
+    background: #1e293b;
+    border-color: #334155;
+    color: #fff;
+}
